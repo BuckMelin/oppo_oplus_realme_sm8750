@@ -12,7 +12,7 @@ MANIFEST=${MANIFEST:-oppo+oplus+realme}
 read -p "请输入自定义内核后缀（默认：android15-8-g29d86c5fc9dd-abogki428889875-4k）: " CUSTOM_SUFFIX
 CUSTOM_SUFFIX=${CUSTOM_SUFFIX:-android15-8-Twilight-4k}
 read -p "是否启用 KPM？(y/n，默认：n): " USE_PATCH_LINUX
-USE_PATCH_LINUX=${USE_PATCH_LINUX:-y}
+USE_PATCH_LINUX=${USE_PATCH_LINUX:-n}
 read -p "KSU分支版本(y=SukiSU Ultra, n=KernelSU Next, 默认：y): " KSU_BRANCH
 KSU_BRANCH=${KSU_BRANCH:-y}
 read -p "应用钩子类型 (manual/syscall/kprobes, m/s/k, 默认m): " APPLY_HOOKS
@@ -24,7 +24,7 @@ APPLY_LZ4KD=${APPLY_LZ4KD:-n}
 read -p "是否启用网络功能增强优化配置？(y/n，默认：y): " APPLY_BETTERNET
 APPLY_BETTERNET=${APPLY_BETTERNET:-y}
 read -p "是否添加 BBR 等一系列拥塞控制算法？(y添加/n禁用/d默认，默认：n): " APPLY_BBR
-APPLY_BBR=${APPLY_BBR:-y}
+APPLY_BBR=${APPLY_BBR:-n}
 read -p "是否启用ADIOS调度器？(y/n，默认：y): " APPLY_ADIOS
 APPLY_ADIOS=${APPLY_ADIOS:-y}
 read -p "是否启用Re-Kernel？(y/n，默认：n): " APPLY_REKERNEL
